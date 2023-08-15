@@ -1,4 +1,5 @@
 #!/bin/bash
+echo -e "\e[34m ***********************Instalation starting ********************\e[0m"
 echo -e "\e[31m Installing nginx \e[0m"
 yum install nginx -y > /tmp/roboshop.log
 
@@ -17,3 +18,5 @@ echo -e "\e[34m restarting the nginx \e[0m"
 systemctl enable nginx > /tmp/roboshop.log
 
 systemctl restart nginx > /tmp/roboshop.log
+
+echo -e "\e[34m ***********************Instalation ending ********************\e[0m"
