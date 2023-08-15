@@ -1,19 +1,19 @@
 #!/bin/bash
 echo -e "\e[31m Installing nginx \e[0m"
-yum install nginx -y 
+yum install nginx -y > /tmp/roboshop.log
 
 echo -e "\e[32m Removing default pages \e[0m"
-rm -rf /usr/share/nginx/html/* 
+rm -rf /usr/share/nginx/html/* > /tmp/roboshop.log
 
 echo -e "\e[32m Installing frontend zip  \e[0m"
-curl -o /tmp/frontend.zip https://roboshop-artifacts.s3.amazonaws.com/frontend.zip 
+curl -o /tmp/frontend.zip https://roboshop-artifacts.s3.amazonaws.com/frontend.zip > /tmp/roboshop.log
 
 cd /usr/share/nginx/html 
 echo -e "\e[33m Unzip the file \e[0m"
-unzip /tmp/frontend.zip
+unzip /tmp/frontend.zip > /tmp/roboshop.log
 
 # vim /etc/nginx/default.d/roboshop.conf 
 echo -e "\e[34m restarting the nginx \e[0m"
-systemctl enable nginx 
+systemctl enable nginx > /tmp/roboshop.log
 
-systemctl restart nginx 
+systemctl restart nginx > /tmp/roboshop.log
