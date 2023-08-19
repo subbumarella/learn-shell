@@ -14,7 +14,7 @@ echo -e "\e[33m Unzip the file \e[0m"
 unzip /tmp/frontend.zip &>>/tmp/roboshop.log
 
 echo -e "\e[31m Adding Configuration \e[0m"
-cp roboshop.conf /etc/nginx/default.d/roboshop.conf
+cp /root/learn-shell/roboshop.conf /etc/nginx/default.d/roboshop.conf
  
 echo -e "\e[34m restarting the nginx \e[0m"
 systemctl enable nginx &>>/tmp/roboshop.log
