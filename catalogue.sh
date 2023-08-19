@@ -9,6 +9,7 @@ yum install nodejs -y
 echo -e "\e[33m Adding Roboshop  \e[0m"
 useradd roboshop 
 
+rm -rf /app
 mkdir /app 
 
 echo -e "\e[34m Download the application code to created app directory.  \e[0m"
@@ -34,7 +35,7 @@ systemctl enable catalogue
 systemctl start catalogue
 
 echo -e "\e[31m Loading Schema and  Install mongodb-client .\e[0m"
-cp mongodb.repo /etc/yum.repos.d/mongo.repo
+cp /root/learn-shell/mongodb.repo /etc/yum.repos.d/mongo.repo
 
 echo -e "\e[312 Install mongodb-client \e[0m"
 yum install mongodb-org-shell -y
