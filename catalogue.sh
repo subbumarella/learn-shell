@@ -1,23 +1,27 @@
 echo -e "\e[34m ***********************Instalation starting ********************\e[0m"
 
 echo -e "\e[31m Setup NodeJS  \e[0m"
-curl -sL https://rpm.nodesource.com/setup_lts.x | bash &>>/tmp/catalogue.log
+curl -sL https://rpm.nodesource.com/setup_lts.x | bash  
 
 echo -e "\e[32m Installing  NodeJS  \e[0m"
-yum install nodejs -y &>>/tmp/catalogue.log
+yum install nodejs -y  
 
 echo -e "\e[33m Adding Roboshop  \e[0m"
-useradd roboshop &>>/tmp/catalogue.log
+useradd roboshop 
 
 mkdir /app 
 
 echo -e "\e[34m Download the application code to created app directory.  \e[0m"
-curl -o /tmp/catalogue.zip https://roboshop-artifacts.s3.amazonaws.com/catalogue.zip  &>>/tmp/catalogue.log
+curl -o /tmp/catalogue.zip https://roboshop-artifacts.s3.amazonaws.com/catalogue.zip   
 
+echo -e "\e[31m Changing directory  \e[0m"
 cd /app
 
 echo -e "\e[33m Unziping Code  \e[0m"
-unzip /tmp/catalogue.zip &>>/tmp/catalogue.log
+unzip /tmp/catalogue.zip  
+
+echo -e "\e[31m Changing directory  \e[0m"
+cd /app
 
 echo -e "\e[34m Installing npm  \e[0m"
 npm install 
