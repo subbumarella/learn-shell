@@ -29,7 +29,7 @@ systemctl daemon-reload
 systemctl enable catalogue 
 systemctl start catalogue
 
-echo -e "\e[31m Loading Schema and  Install mongodb-client \e[0m"
+echo -e "\e[31m Loading Schema and  Install mongodb-client .\e[0m"
 cp mongodb.repo /etc/yum.repos.d/mongo.repo
 
 echo -e "\e[312 Install mongodb-client \e[0m"
