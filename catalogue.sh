@@ -35,7 +35,7 @@ systemctl enable catalogue
 systemctl start catalogue
 
 echo -e "\e[31m Loading Schema and  Install mongodb-client .\e[0m"
-cp /root/learn-shell/mongodb.repo /etc/yum.repos.d/mongo.repo
+cp /home/centos/learn-shell/mongodb.repo /etc/yum.repos.d/mongo.repo
 
 echo -e "\e[312 Install mongodb-client \e[0m"
 yum install mongodb-org-shell -y
