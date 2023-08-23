@@ -26,7 +26,7 @@ echo -e "\e[34m Installing npm  \e[0m"
 npm install 
 
 echo -e "\e[35m Setup SystemD User Service \e[0m"
-cp /home/centos/learn-shell/user.conf /etc/systemd/system/user.servicex
+cp /home/centos/learn-shell/user.conf /etc/systemd/system/user.service
 
 systemctl daemon-reload
 systemctl enable user 
