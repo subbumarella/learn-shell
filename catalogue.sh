@@ -19,7 +19,7 @@ echo -e "\e[31m Changing directory  \e[0m"
 cd /app
 
 echo -e "\e[33m Unziping Code  \e[0m"
-unzip /tmp/catalogue.zip  
+unzip /tmp/catalogue.zip 
 
 echo -e "\e[31m Changing directory  \e[0m"
 cd /app
