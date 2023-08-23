@@ -28,7 +28,7 @@ echo -e "\e[34m Installing npm  \e[0m"
 npm install 
 
 echo -e "\e[35m Setup SystemD Catalogue Service \e[0m"
-cp catalogue.conf /etc/systemd/system/catalogue.service
+cp /home/centos/learn-shell/catalogue.conf /etc/systemd/system/catalogue.service
 
 systemctl daemon-reload
 systemctl enable catalogue 
