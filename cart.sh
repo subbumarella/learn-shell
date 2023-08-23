@@ -25,7 +25,7 @@ cd /app
 echo -e "\e[34m Installing npm  \e[0m"
 npm install 
 
-echo -e "\e[35m Setup SystemD User Service \e[0m"
+echo -e "\e[35m Setup SystemD cart Service \e[0m"
 cp /home/centos/learn-shell/cart.service /etc/systemd/system/cart.service
 
 systemctl daemon-reload
