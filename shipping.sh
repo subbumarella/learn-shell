@@ -23,6 +23,8 @@ mvn clean package
 echo -e "\e[32m download the dependencies & build the application \e[0m"
 mv target/shipping-1.0.jar shipping.jar 
 
+cp /home/centos/learn-shell/shipping.service  /etc/systemd/system/shipping.service
+
 systemctl daemon-reload
 systemctl enable shipping 
 systemctl start shipping
