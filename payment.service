@@ -8,7 +8,7 @@ Environment=CART_HOST=cart-dev.roboshopmarket.store
 Environment=CART_PORT=8080
 Environment=USER_HOST=user-dev.roboshopmarket.store
 Environment=USER_PORT=8080
-Environment=AMQP_HOST=user-dev.roboshopmarket.store
+Environment=AMQP_HOST=rabbitmq-dev.roboshopmarket.store
 Environment=AMQP_USER=roboshop
 Environment=AMQP_PASS=roboshop123
 
