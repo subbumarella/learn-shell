@@ -9,6 +9,8 @@ rm -rf /app
 mkdir /app 
 
 echo -e "\e[32m Download the application code to created app directory. \e[0m"
+curl -L -o /tmp/dispatch.zip https://roboshop-artifacts.s3.amazonaws.com/dispatch.zip 
+
 cd /app 
 
 echo -e "\e[33m unzipping \e[0m"
