@@ -6,6 +6,7 @@ yum install maven -y
 echo -e "\e[32m  Adding user \e[0m"
 useradd roboshop
 
+rm -rf /app
 mkdir /app 
 
 echo -e "\e[33m Download the application code \e[0m"
